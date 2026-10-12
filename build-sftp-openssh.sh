@@ -3,9 +3,9 @@
 set -ev
 
 # ---- Config ---------------------------------------------------------------
-: "${OPENSSH_VERSION:=9.8p1}"     # OpenSSH portable version
-: "${ZLIB_VERSION:=1.3.1}"        # zlib version to embed
-: "${ZIG_VERSION:=0.15.1}"
+: "${OPENSSH_VERSION:=10.4p1}"     # OpenSSH portable version
+: "${ZLIB_VERSION:=1.3.2}"        # zlib version to embed
+: "${ZIG_VERSION:=0.16.0}"
 : "${JOBS:=8}"
 
 # TARGET values like: x86_64-linux-musl, aarch64-linux-musl
