@@ -19,8 +19,8 @@ jobs:
             runs_on: ubuntu-24.04-arm
 
     env:
-      DROPBEAR_VERSION: 2025.88
-      ZIG_VERSION: 0.15.1
+      DROPBEAR_VERSION: 2026.92
+      ZIG_VERSION: 0.16.0
       JOBS: 8
 
     steps:
@@ -54,7 +54,7 @@ jobs:
       - name: Build static sftp-server (OpenSSH)
         env:
           TARGET: ${{ matrix.target }}
-          OPENSSH_VERSION: 9.8p1
+          OPENSSH_VERSION: 10.4p1
           ZIG_VERSION: ${{ env.ZIG_VERSION }}
           JOBS: ${{ env.JOBS }}
         run: ./build-sftp-openssh.sh
